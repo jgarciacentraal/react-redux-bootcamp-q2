@@ -28,10 +28,9 @@ export const PriceProduct = styled.p`
   color: #343a40;
 `;
 
-export const ImagenProduct = styled.img`
+export const ImageProduct = styled.img`
   max-width: 250px;
   max-height: 250px;
-  //object-fit: contain;
 `;
 export const BtnProduct = styled.a`
   font-family: Arial, Helvetica, sans-serif;
