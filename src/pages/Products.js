@@ -7,6 +7,7 @@ import { Product } from "../components/Product";
 
 export const Products = () => {
   const { items } = products.data.products;
+
   return (
     <Container>
       {items.map((product) => (

@@ -20,7 +20,7 @@ export function Product({ name, categories, price, images }) {
         <CategoryProduct>{category}</CategoryProduct>
         <PriceProduct>{`$${price}`}</PriceProduct>
       </InfoProduct>
-      <BtnProduct>Add to cart</BtnProduct>
+      <BtnProduct onClick={() => {}}>Add to cart</BtnProduct>
     </CardProduct>
   );
 }

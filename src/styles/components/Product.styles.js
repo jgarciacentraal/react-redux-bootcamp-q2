@@ -34,7 +34,7 @@ export const ImageProduct = styled.img`
 `;
 export const BtnProduct = styled.a`
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #f3722c;
+  background-color: #2b2d42;
   display: flex;
   align-items: center;
   justify-content: center;
