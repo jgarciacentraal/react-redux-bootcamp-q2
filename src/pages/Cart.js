@@ -39,21 +39,25 @@ export const Cart = () => {
       <SectionCart id="section-cart">
         <RowByProduct>
           <RowHead>
-            {HEADERS.map((h, i) => (
-              <Header key={i}>{h}</Header>
-            ))}
+            <tr>
+              {HEADERS.map((h, i) => (
+                <Header key={i}>{h}</Header>
+              ))}
+            </tr>
           </RowHead>
 
           {fewProducts.map((product) => (
             <RowBody key={product.id}>
-              <RowByProductCart {...product} />
+              <tr>
+                <RowByProductCart {...product} />
+              </tr>
             </RowBody>
           ))}
         </RowByProduct>
         <Summary>
           <SummaryHeading>Summary</SummaryHeading>
-          <SummaryData>Total Items</SummaryData>
-          <SummaryData>Total Costs</SummaryData>
+          <SummaryData>Total Items {"2"}</SummaryData>
+          <SummaryData>Total Costs {"$345.55"}</SummaryData>
           <BtnCheckout>Checkout</BtnCheckout>
         </Summary>
       </SectionCart>
