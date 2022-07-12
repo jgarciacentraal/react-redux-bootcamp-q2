@@ -1,7 +1,18 @@
-import React from 'react'
+import * as React from "react";
+//own styles
+import { Container } from "../styles/pages/Products.styles";
+//fake data
+import products from "../data/products.json";
+import { Product } from "../components/Product";
 
 export const Products = () => {
+  const { items } = products.data.products;
+
   return (
-    <div>Products</div>
-  )
-}
+    <Container>
+      {items.map((product) => (
+        <Product key={product.id} {...product} />
+      ))}
+    </Container>
+  );
+};
